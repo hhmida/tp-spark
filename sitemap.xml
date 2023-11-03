@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://hhmida.github.io/tp-spark/index.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hhmida.github.io/tp-spark/exercice.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hhmida.github.io/tp-spark/rdd.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hhmida.github.io/tp-spark/sparksql.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hhmida.github.io/tp-spark/streaming.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hhmida.github.io/tp-spark/submitting.html</loc>
-         <lastmod>2023-01-14</lastmod>
+         <lastmod>2023-11-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
