@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hhmida.github.io/tp-spark/exercice.html</loc>
-         <lastmod>2023-11-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://hhmida.github.io/tp-spark/rdd.html</loc>
          <lastmod>2023-11-10</lastmod>
          <changefreq>daily</changefreq>
