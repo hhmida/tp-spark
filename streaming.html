@@ -122,7 +122,7 @@ localhost:2181<span class=w> </span>wordcounttopic
 <span class=m>6</span>,3,414
 <span class=m>7</span>,2,150
 <span class=m>8</span>,2,10
-</code></pre></div> </details> <p><img alt=3⃣ class=twemoji src=https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/33-20e3.svg title=:three:> Créer le fichier source <code>csvstreaming.py</code></p> <details class=example open=open> <summary>structured_network_wordcount.py</summary> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>pyspark.sql</span> <span class=kn>import</span> <span class=n>SparkSession</span>
+</code></pre></div> </details> <p><img alt=3⃣ class=twemoji src=https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/33-20e3.svg title=:three:> Créer le fichier source <code>csvstreaming.py</code></p> <details class=example open=open> <summary>csvstreaming.py</summary> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>pyspark.sql</span> <span class=kn>import</span> <span class=n>SparkSession</span>
 <span class=kn>from</span> <span class=nn>pyspark.streaming</span> <span class=kn>import</span> <span class=n>StreamingContext</span>
 
 <span class=n>spark</span> <span class=o>=</span> <span class=n>SparkSession</span><span class=o>.</span><span class=n>builder</span><span class=o>.</span><span class=n>appName</span><span class=p>(</span><span class=s1>&#39;Spark Structured Streaming&#39;</span><span class=p>)</span><span class=o>.</span><span class=n>getOrCreate</span><span class=p>()</span>
@@ -131,8 +131,6 @@ localhost:2181<span class=w> </span>wordcounttopic
     <span class=o>.</span><span class=n>readStream</span> \
     <span class=o>.</span><span class=n>schema</span><span class=p>(</span><span class=s2>&quot;num int,client int,montant int&quot;</span><span class=p>)</span>\
     <span class=o>.</span><span class=n>csv</span><span class=p>(</span><span class=s2>&quot;orders/&quot;</span><span class=p>,</span> <span class=n>header</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
-    <span class=c1># \</span>
-    <span class=c1>#.load()</span>
 
 <span class=n>count_orders</span> <span class=o>=</span> <span class=n>df</span><span class=o>.</span><span class=n>groupby</span><span class=p>(</span><span class=s2>&quot;client&quot;</span><span class=p>)</span><span class=o>.</span><span class=n>count</span><span class=p>()</span>
 <span class=c1># Start running the query that prints the running counts to the console</span>
