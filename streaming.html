@@ -85,8 +85,6 @@ localhost:2181<span class=w> </span>wordcounttopic
 <span class=c1># Create SPARK Context</span>
 <span class=n>sc</span> <span class=o>=</span> <span class=n>spark</span><span class=o>.</span><span class=n>sparkContext</span>
 <span class=n>sc</span><span class=o>.</span><span class=n>setLogLevel</span><span class=p>(</span><span class=s2>&quot;WARN&quot;</span><span class=p>)</span>
-<span class=c1>## Create Streaming context , with 10 second interval </span>
-<span class=n>ssc</span> <span class=o>=</span> <span class=n>StreamingContext</span><span class=p>(</span><span class=n>sc</span><span class=p>,</span>  <span class=mi>10</span><span class=p>)</span> 
 <span class=c1># Create DataFrame representing the stream of input lines from connection to localhost:9999</span>
 <span class=n>lines</span> <span class=o>=</span> <span class=n>spark</span> \
     <span class=o>.</span><span class=n>readStream</span> \
